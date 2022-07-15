@@ -1,0 +1,27 @@
+@import "../../styles/typography";
+@import "../../styles/colors";
+// @import "../styles/_typography.scss";
+
+nav.market-selector__nav--markets {
+  text-align: center;
+  margin-bottom: 2em;
+  button.market-selector__button {
+    font-family: $primary-font;
+    color: $primary-white;
+    background-color: $primary-black;
+  }
+  button.market-selector__button.active {
+    border: 2px solid;
+    border-style: inset;
+    background-color: $primary-white;
+    color: $primary-black;
+  }
+}
+
+@media (min-width: 1366px) {
+  nav.market-selector__nav--markets {
+    button.market-selector__button {
+      font-size: 1em;
+    }
+  }
+}

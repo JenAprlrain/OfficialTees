@@ -1,0 +1,13 @@
+@import "../../styles/colors";
+@import "../../styles/typography";
+
+.button__btn {
+  color: $primary-white;
+  background-color:#b88e84;
+  font-family: $primary-font;
+  font-size: 80%
+}
+
+.button__btn:hover {
+  cursor: pointer;
+}

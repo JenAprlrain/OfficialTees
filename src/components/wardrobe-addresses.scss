@@ -1,0 +1,25 @@
+.wardrobe-addresses__container {
+  min-height: 50vh;
+  .wardrobe-addresses__ul {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wardrobe-addresses__container {
+    text-align: center;
+    text-align: -webkit-center;
+    .wardrobe-addresses__ul {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      width: 450px;
+      text-overflow: ellipsis;
+    }
+    h3.wardrobes__addresses-title {
+      text-align: center;
+      text-align: -webkit-center;
+    }
+  }
+}

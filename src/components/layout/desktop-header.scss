@@ -1,0 +1,87 @@
+@import "../../styles/colors";
+@import "../../styles/typography";
+
+// header.desktop-header {
+//   display: none;
+//   div.desktop-header__container {
+//     background-color: $primary-black;
+//     display: grid;
+//     grid-template-columns: 4fr 6fr;
+//     h1.desktop-header__title > a {
+//       text-decoration: none;
+//       color: $primary-white;
+//       margin-left: 2em;
+//     }
+//     nav.desktop-header__nav {
+//       font-size: 1.5em;
+//       place-self: center;
+//       a.desktop-header__nav-links {
+//         text-decoration: none;
+//         color: $primary-white;
+//         margin-right: 1.5em;
+//         font-size: 0.9em;
+//       }
+//       a.desktop-header__nav-links:nth-child(4) {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+header.desktop-header {
+  display: none;
+}
+
+@media (min-width: 1366px) {
+  header.desktop-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    div.desktop-header__container {
+      background-color: rgb(189, 169, 155);
+      display: grid;
+      grid-template-columns: 4fr 6fr;
+      border-bottom: 5px solid #f8ba88;
+      padding: 0.6em 0;
+      h1.desktop-header__title > a {
+        text-decoration: none;
+        color: $primary-white;
+        margin-left: 3em;
+      }
+      nav.desktop-header__nav {
+        font-size: 1.5em;
+        place-self: center;
+        a.desktop-header__nav-links {
+          text-decoration: none;
+          color: $primary-white;
+          margin-right: 2em;
+          font-size: 0.8em;
+          position: relative;
+
+          &:not(:last-child) {
+            &::after {
+              position: absolute;
+              content: "";
+              height: 29px;
+              width: 1px;
+              right: 0;
+              right: -14px;
+              transform: translateY(-50%);
+              top: 50%;
+              background: $primary-white;
+            }
+          }
+        }
+        a.desktop-header__nav-links:hover {
+          color: rgb(248, 186, 136);
+        }
+        a.desktop-header__nav-links.active {
+          color: #f8ba88;
+        }
+        a.desktop-header__nav-links:nth-child(6) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

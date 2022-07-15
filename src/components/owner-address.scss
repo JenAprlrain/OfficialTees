@@ -1,0 +1,20 @@
+.owner-address__address-link {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  margin-bottom: 0.25em;
+  .owner-address__svg {
+    font-size: 1.2em;
+    margin-right: 3px;
+  }
+  li.owner-address__address {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    list-style: none;
+    font-size: 0.85em;
+  }
+  li.owner-address__count {
+    list-style: none;
+    font-size: 0.85em;
+  }
+}

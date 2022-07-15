@@ -1,0 +1,50 @@
+@import "../styles/colors";
+
+nav.collection-pagination__nav {
+  margin-top: 3em;
+  ul.collection-pagination__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    li.active {
+      background-color: $primary-black;
+      border: 2px solid $primary-black;
+      border-style: inset;
+    }
+    li:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary-black;
+    }
+    li:nth-child(1).active {
+      background-color: $primary-white;
+      color: $primary-black;
+      border: 2px solid;
+      border-style: inset;
+    }
+    li.page-item {
+      border: 1px solid rgb(128, 128, 128, 0.25);
+      width: 45px;
+      height: 45px;
+      a.page-link {
+        text-decoration: none;
+        color: $primary-black;
+      }
+      img {
+        width: 45px;
+        height: 45px;
+      }
+      span.sr-only {
+        display: none;
+      }
+    }
+    li.page-item.active > span.page-link > img {
+      border: 2px solid;
+      border-style: inset;
+    }
+  }
+}

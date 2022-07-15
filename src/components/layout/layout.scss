@@ -1,0 +1,43 @@
+@import "../../styles/colors";
+@import "../../styles/typography";
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+}
+
+.layout {
+  overflow-x: hidden;
+  // height: 100vh;
+  height: 100%;
+}
+
+.layout__children-container {
+  // height: 100%;
+  height: min-content;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: 1366px) {
+    padding-top: 105px;
+  }
+}
+
+button.layout__theme-icon-container {
+  // text-align: end;
+  border: none;
+  background-color: $primary-white;
+  // top: 25px;
+  // right: 25px;
+}
+
+svg.layout__theme {
+  float: right;
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+
+// .layout__theme-icon-container > .layout__theme {
+//   margin: 16px 16px 0 0;
+// }

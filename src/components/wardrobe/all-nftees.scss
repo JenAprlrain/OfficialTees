@@ -1,0 +1,53 @@
+.all-nftees__container {
+  text-align: -webkit-center;
+  margin-top: 2em;
+  margin-bottom: 50px;
+}
+
+.card-slider__container {
+  max-width: 80%;
+  @media screen and (max-width: 450px) {
+    max-width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+  .nft-card__card {
+    @media screen and (max-width: 450px) {
+      width: 92%;
+      min-height: 410px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 94%;
+      min-height: 350px;
+    }
+  }
+
+  // .nft-card__card--name{
+  //   @media screen and (max-width: 450px) {
+  //     font-size: 11px;
+  //   }
+  // }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "Joystix", monospace;
+    font-size: 26px;
+    line-height: 1;
+    opacity: 0.99;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-next:before {
+    content: ">";
+  }
+
+  .slick-prev:before {
+    content: "<";
+  }
+}

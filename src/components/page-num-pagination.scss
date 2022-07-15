@@ -1,0 +1,25 @@
+@import "../styles/colors";
+
+ol.page-num-pagination__ol {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  li.page-item {
+    border: 1px solid #a2a2a2;
+    font-size: 1.25em;
+    width: 10%;
+    text-align: center;
+    span.sr-only {
+      display: none;
+    }
+    a.page-link {
+      text-decoration: none;
+      color: $primary-black;
+    }
+  }
+  li.page-item.active {
+    background-color: $primary-black;
+    color: $primary-white;
+  }
+}

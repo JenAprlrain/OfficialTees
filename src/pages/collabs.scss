@@ -1,0 +1,24 @@
+div.about {
+  text-align: center;
+  // padding-top: 2em;
+  padding: 2em;
+  .about__p {
+    text-align: center;
+    margin-bottom: 3em;
+    padding: 0 1em 0 1em;
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 1366px) {
+  div.about {
+    padding: 5em;
+    .about__p {
+      font-size: 1em;
+      text-align: center;
+    }
+    .about__rarity-scale {
+      width: 50%;
+    }
+  }
+}

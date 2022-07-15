@@ -1,0 +1,214 @@
+@import "../styles/colors";
+
+.nft-community {
+
+      
+      &__slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      &__slider:hover {
+        opacity: 1;
+      }
+      
+      &__slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #005ef7;
+        cursor: pointer;
+      }
+      
+      &__slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #005ef7;
+        cursor: pointer;
+      }
+    &__heading {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__banner {
+        //background-image: url('../images/IMG_8742.jpg');
+        width: 100%;
+        height: 400px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    &__banner-img {
+        //background-image: url('../images/IMG_8742.jpg');
+        height: inherit;
+        box-shadow: 0px 0px 15px 2px grey;
+    }
+
+    &__connect-section {
+        text-align: center;
+        margin: 10px 0 20px 0;
+    }
+
+    &__connect-button {
+        text-transform: uppercase;
+        color: $primary-black;
+        border: 6px solid $primary-black;
+        padding: 10px 20px;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &__mashup-section {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    &__mashupImg-section {
+        display: flex;
+
+        > .gatsby-image-wrapper {
+            flex-basis: 100%;
+            margin: 0 1.5em;
+
+            @media (max-width: 576px) {
+                margin: 0 1.5em 1em 1.5em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__artist-section {
+        text-align: center;
+        margin: 3em 5em;
+
+        @media (max-width: 768px) {
+            margin: 3em 1em;
+        }
+
+        &__heading {
+            @media (max-width: 768px) {
+                font-size: 1.5em;
+            }
+        }
+
+        &__text {
+            margin: 1.5em 0;
+        }
+    }
+
+    &__artist-accounts {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 991px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    &__artist-img {
+        width: 120px;
+        margin: .5em 1em;
+        text-decoration: none;
+
+        > .gatsby-image-wrapper {
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        img{
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        &__figcaption {
+            margin: .4em 0;
+            color: $primary-black;
+            font-size: 12px;
+        }
+    }
+
+    &__artist-description {
+        margin-top: 2em;
+    }
+
+    &__fashionHead-section {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    &__fashionHeadImg-section {
+        display: flex;
+        padding: 1em 3.5em;
+
+        > .gatsby-image-wrapper {
+            flex-basis: 100%;
+            margin: 0 .5em;
+
+            @media (max-width: 576px) {
+                margin: 0 1.5em 1em 1.5em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            padding: 0 1.5em;
+        }
+    }
+
+    &__sbit-section {
+        padding: 1em 13em;
+
+        @media (max-width: 768px) {
+            padding: 1em;
+        }
+
+        &__heading {
+            font-size: 1em;
+            
+            margin-bottom: 40px;
+        }
+    }
+
+    &__sbit-detail {
+
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+
+        > .gatsby-image-wrapper {
+            width: 120px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+    }
+
+    &__sbit-text {
+        text-align: left;
+        margin-left: 10px;
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+            font-size: .9em;
+            text-align: center;
+        }
+
+
+        a {
+            color: $primary-black;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.searchbar__container {
+  // border: 1px solid;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  .searchbar__search-input {
+    width: 75%;
+    text-align: center;
+  }
+  .searchbar__search-icon {
+    position: relative;
+    top: 5px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .searchbar__container {
+    .searchbar__search-input {
+      width: 50%;
+    }
+  }
+}
+
+// @media (min-width: 1366px) {
+//   .searchbar__conatiner {
+//     margin-bottom: 5em;
+//   }
+// }

@@ -1,0 +1,11 @@
+@import "../styles/colors";
+
+.merch-tees {
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+  a.merch-tees__a {
+    position: relative;
+    top: 25%;
+  }
+}
