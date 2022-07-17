@@ -17,6 +17,7 @@ const HowItWorks = () => {
     setTimeout(() => {
       setShow(false)
     }, 1500)
+    
   }
 
   return (
@@ -26,6 +27,7 @@ const HowItWorks = () => {
         <div className="teams__fashionHead-section">
             <div className="teams__fashionHeadImg-section">
                 <a className="teams__fashionHead-img">
+                    
                     <StaticImage
                         src="../images/RoyalTees.jpg"
                         alt="the rarity of NFTees"
