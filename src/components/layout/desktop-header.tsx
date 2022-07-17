@@ -36,14 +36,14 @@ const DesktopHeader = () => {
           to="/collabs"
           activeClassName="active"
         >
-          Collabs
+          Partners
           </Link>
           <Link
             className={`desktop-header__nav-links ${toggle && "toggle"}`}
             to="/teams"
             activeClassName="active"
           >
-            Team
+          Team
           </Link>
 
         </nav>

@@ -10,8 +10,19 @@ div.markets__container {
   
 }
 button.button__btn {
-  height: 60px;
-  color: rgb(255, 255, 255);
-  background-color: #b88e84;
-  border-radius: 15px;
+  background-color:#F1EBE7;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 0px;
+  font-size: 80%
+}
+
+.button2 {
+  background-color:#F1EBE7;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 0px;
+  font-size: 80%;
+  width: 20%;
+  height: auto
 }

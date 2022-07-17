@@ -48,7 +48,14 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
           to="/collabs"
           activeClassName="active"
         >
-          Collabs
+          Partners
+        </Link>
+        <Link
+          className={`header__nav-mobile-links ${toggle && "toggle"}`}
+          to="/teams"
+          activeClassName="active"
+        >
+          Team
         </Link>
 
 

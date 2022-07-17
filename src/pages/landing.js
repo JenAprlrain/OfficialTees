@@ -1,7 +1,7 @@
 import GatsbyLink from "gatsby-link";
 import React from "react";
 import Typed from "react-typed";
-import "../pages/landing.scss";
+import "../pages/collections.scss";
 import { navigate } from "gatsby-link";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
             "Wear clothing that is as rare as you",
             "Secured to the blockchain",
           ]}
-          typeSpeed={150}
-          backSpeed={100}
+          typeSpeed={70}
+          backSpeed={30}
         />
       </div>
       <div className="buttons">

@@ -2,10 +2,17 @@
 @import "../../styles/typography";
 
 .button__btn {
-  color: $primary-white;
-  background-color:#b88e84;
+  color: black;
+  background-color:#F1EBE7;
+  transition: 0.5s;
+  background-size: 100% auto; 
   font-family: $primary-font;
-  font-size: 80%
+  border-radius: 0px;
+  font-size: 50%;
+  display: inline-block;
+  text-align: center;
+  width:70%;
+  height: auto
 }
 
 .button__btn:hover {

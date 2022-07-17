@@ -38,14 +38,14 @@ header.desktop-header {
     top: 0;
     z-index: 999;
     div.desktop-header__container {
-      background-color: rgb(189, 169, 155);
+      background-color: #F1EBE7;
       display: grid;
       grid-template-columns: 4fr 6fr;
-      border-bottom: 5px solid #f8ba88;
+      border-bottom: 2px solid black;
       padding: 0.6em 0;
       h1.desktop-header__title > a {
         text-decoration: none;
-        color: $primary-white;
+        color: black;
         margin-left: 3em;
       }
       nav.desktop-header__nav {
@@ -53,7 +53,7 @@ header.desktop-header {
         place-self: center;
         a.desktop-header__nav-links {
           text-decoration: none;
-          color: $primary-white;
+          color: black;
           margin-right: 2em;
           font-size: 0.8em;
           position: relative;
@@ -68,15 +68,15 @@ header.desktop-header {
               right: -14px;
               transform: translateY(-50%);
               top: 50%;
-              background: $primary-white;
+              background: black;
             }
           }
         }
         a.desktop-header__nav-links:hover {
-          color: rgb(248, 186, 136);
+          color: white;
         }
         a.desktop-header__nav-links.active {
-          color: #f8ba88;
+          color: black;
         }
         a.desktop-header__nav-links:nth-child(6) {
           margin-right: 0;

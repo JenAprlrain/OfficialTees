@@ -27,7 +27,7 @@ return (
             <div className="teams__fashionHeadImg-section">
                 <a className="teams__fashionHead-img"href="https://twitter.com/0xJMONEY">
                     <StaticImage
-                        src="../images/Jmoney netizen.png"
+                        src="../images/Jmoney.png"
                         alt="the rarity of NFTees"
                         className="about__rarity-scale"
                     />
@@ -37,7 +37,7 @@ return (
 
                 <a className="teams__fashionHead-img"href="https://twitter.com/DeFiiGhost">
                     <StaticImage
-                        src="../images/z14 netizen.jpeg"
+                        src="../images/z14.jpeg"
                         alt="the rarity of NFTees"
                         className="about__rarity-scale"
                     />
@@ -47,40 +47,20 @@ return (
 
                 <a className="teams__fashionHead-img"href="https://twitter.com/D_Low_TEES">
                     <StaticImage
-                        src="../images/dlow netizen.png"
+                        src="../images/dlow.png"
                         alt="the rarity of NFTees"
                         className="about__rarity-scale"
                     />
                     <p>D Low</p>
                     <p>Physical Product Lead</p>
                 </a>
-
-                <a className="teams__fashionHead-img"href="https://twitter.com/nzaru1">
-                    <StaticImage
-                        src="../images/nzarunetizen.png"
-                        alt="the rarity of NFTees"
-                        className="about__rarity-scale"
-                    />
-                    <p>Nzaru</p>
-                    <p>Discord Lead / Strategy Specialist</p>
-                </a>
             </div>
         </div>
 
         <div className="teams__fashionHead-section-2">
-                <a className="teams__fashionHead-img"href="https://twitter.com/CreepyCryptoApe">
-                    <StaticImage
-                        src="../images/creepycryptoapenetizen.png"
-                        alt="the rarity of NFTees"
-                        className="about__rarity-scale"
-                    />
-                    <p>CreepyCryptoApe</p>
-                    <p>Discord Moderation Lead</p>
-                </a>
-
                 <a className="teams__fashionHead-img"href="https://twitter.com/BlueDerpyfi">
                     <StaticImage
-                        src="../images/Blue Derpy Netizen.png"
+                        src="../images/Blue Derpy.png"
                         alt="the rarity of NFTees"
                         className="about__rarity-scale"
                     />
@@ -88,24 +68,24 @@ return (
                     <p>Technology and Development Lead</p>
                 </a>
 
-                <a className="teams__fashionHead-img"href="https://twitter.com/dedis41">
-                    <StaticImage
-                        src="../images/Dedis netizen.png"
-                        alt="the rarity of NFTees"
-                        className="about__rarity-scale"
-                    />
-                    <p>Dedis</p>
-                    <p>Communications and Engagement Lead / Operations Specialist</p>
-                </a>
-
                 <a className="teams__fashionHead-img"href="https://twitter.com/Jerr0d_">
                     <StaticImage
-                        src="../images/Jerrod Netiezen.png"
+                        src="../images/Jerrod.png"
                         alt="the rarity of NFTees"
                         className="about__rarity-scale"
                     />
                     <p>J3rr0d</p>
-                    <p>Design Labs Lead / CommuniTee Collection Lead</p>
+                    <p>Marketing Lead</p>
+                </a>
+
+                <a className="teams__fashionHead-img"href="https://twitter.com/jen_aprilrain">
+                    <StaticImage
+                        src="../images/Jen.png"
+                        alt="the rarity of NFTees"
+                        className="about__rarity-scale"
+                    />
+                    <p>jen_aprilrain</p>
+                    <p>Development and Community Management Lead</p>
                 </a>
         </div>
     </div>

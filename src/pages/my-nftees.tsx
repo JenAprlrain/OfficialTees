@@ -20,8 +20,8 @@ const myTees = () => {
         <h1 className="markets__header">My NFTees</h1>
         {address ? 
           <>
-            <div onClick={nftees?.length !== 0 ? claimRoyaltees : null}>
-              <Button >
+            <div onClick={nftees?.length !== 0 ? claimRoyaltees : null}style={{width: '50%',height: 'auto'}}>
+              <Button>
                 {pendingRequest ? "Claiming..." : `Claim ${claimable.toFixed(6)} ftm in Royaltees`}
               </Button>
             </div>
@@ -42,13 +42,13 @@ const myTees = () => {
           </>
           :
           wrongNetwork ? 
-          <div onClick={addNetwork}>
+          <div onClick={addNetwork}style={{width: '50%',height: 'auto'}}>
             <Button >
               Please Change Network to Fantom Mainnet
             </Button>
           </div>
           :
-          <div onClick={onConnect}>
+          <div onClick={onConnect}style={{width: '50%',height: 'auto'}}>
             <Button >
               Connect Wallet
             </Button>

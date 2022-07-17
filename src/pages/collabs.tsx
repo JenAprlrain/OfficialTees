@@ -25,35 +25,39 @@ const HowItWorks = () => {
       <div className="collections">
         <div className="collections__sub-section">
           <h1 className="collections__heading1">Uman</h1>
-
-            <StaticImage
+          <Link to="/uman">
+          <StaticImage
               style={{width:"700px",height:"auto"}}
               src="../images/Uman.png"
               alt="the rarity of NFTees"
               className="about__rarity-scale"
             />
+          </Link>
           </div>
+
           <div className="collections__sub-section">
           <h1 className="collections__heading1">Teens on Acid</h1>
-
+          <Link to="/toa">
             <StaticImage
               style={{width:"700px",height:"auto"}}
-              src="../images/TOAxNFTEES LOGO.png"
+              src="../images/TOANFTEES LOGO1.png"
               alt="the rarity of NFTees"
               className="about__rarity-scale"
             />
+            </Link>
           </div>
           
           </div>
           <div className="collections__sub-section">
           <h1 className="collections__heading1">Clokkworky</h1>
-
+          <Link to="/clokkworky">
             <StaticImage
               style={{width:"700px",height:"auto"}}
               src="../images/Transparent_Clokkworky_Tees_1.png"
               alt="the rarity of NFTees"
               className="about__rarity-scale"
             />
+            </Link>
           </div>
     </Layout>
   )

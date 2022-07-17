@@ -21,51 +21,47 @@ const HowItWorks = () => {
 
   return (
     <Layout>
-      <Seo title="Collections" />
-      <div className="collections">
-        <div className="collections__sub-section">
-          <h2 className="collections__heading1">OfficialNFTees (Royal Tees) – $TEES</h2>
+    <>
+          <div className="teams">
+        <div className="teams__fashionHead-section">
+            <div className="teams__fashionHeadImg-section">
+                <a className="teams__fashionHead-img">
+                    <StaticImage
+                        src="../images/RoyalTees.jpg"
+                        alt="the rarity of NFTees"
+                        className="about__rarity-scale"
+                    />
+                </a>
 
-            <StaticImage
-              style={{width:"300px",height:"auto"}}
-              src="../images/RoyalTees.jpg"
-              alt="the rarity of NFTees"
-              className="about__rarity-scale"
-            />
-          </div>
-          <div className="collections__sub-section">
-          <h2 className="collections__heading1">CommuniTee Collection – $TEESCC</h2>
+                <a className="teams__fashionHead-img">
+                    <StaticImage
+                        src="../images/CommuniTees.jpg"
+                        alt="the rarity of NFTees"
+                        className="about__rarity-scale"
+                    
+                    />
+                </a>
 
-            <StaticImage
-              style={{width:"300px",height:"auto"}}
-              src="../images/CommuniTees.jpg"
-              alt="the rarity of NFTees"
-              className="about__rarity-scale"
-            />
-          </div>
-          
-          </div>
-          <div className="collections__sub-section">
-          <h2 className="collections__heading1">Tees Design Labs – $TEESDL</h2>
+                <a className="teams__fashionHead-img">
+                    <StaticImage
+                        src="../images/DesignLabs.jpg"
+                        alt="the rarity of NFTees"
+                        className="about__rarity-scale"
+                    />
+                </a>
 
-            <StaticImage
-              style={{ width:"300px",height:"auto"}}
-              src="../images/DesignLabs.jpg"
-              alt="the rarity of NFTees"
-              className="about__rarity-scale"
-            />
-          </div>
-          <div className="collections__sub-section">
-          <h2 className="collections__heading1">Tees Lifestyle Collection – $TEESL</h2>
-
-            <StaticImage
-              style={{ width:"300px",height:"auto"}}
-              src="../images/LifeStyle.jpg"
-              alt="the rarity of NFTees"
-              className="about__rarity-scale"
-            />
-          </div>
-    </Layout>
+                <a className="teams__fashionHead-img">
+                    <StaticImage
+                        src="../images/LifeStyle.jpg"
+                        alt="the rarity of NFTees"
+                        className="about__rarity-scale"
+                    />
+                </a>
+            </div>
+        </div>
+        </div>
+        </>
+      </Layout>
   )
 }
 

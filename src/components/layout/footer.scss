@@ -10,20 +10,20 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: 5px solid #f8ba88;
-  background-color: rgb(189, 169, 155);
+  border-top: 2px solid black;
+  background-color: #F1EBE7;
   background-position: top;
   overflow-y: hidden;
   .footer__link {
     display: block;
     text-decoration: none;
     font-family: $primary-font;
-    color: $primary-white;
+    color: black;
     margin-bottom: 5px;
   }
   .footer__copyright {
     font-family: $secondary-font;
-    color: $primary-white;
+    color: black;
     font-size: 0.5em;
     margin-left: 1em;
   }
@@ -63,7 +63,7 @@ footer {
     .footer__social-links-container {
       .footer__social-media-icons {
         font-size: 1.75em;
-        color: $primary-white;
+        color: black;
       }
     }
   }
@@ -140,7 +140,7 @@ footer {
     div.footer__detail-links {
       p.footer__copyright {
         margin-left: 5em;
-        color: $primary-white;
+        color: black;
       }
     }
   }
