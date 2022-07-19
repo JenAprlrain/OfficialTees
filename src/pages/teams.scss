@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+  }
+  
+  .column {
+    width:auto;
+    height:100%;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 40px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.column:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}

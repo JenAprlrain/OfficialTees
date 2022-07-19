@@ -2,7 +2,7 @@
 @import "../../styles/typography";
 
 header {
-  background-color: rgb(189, 169, 155);
+  background-color: #F1EBE7;
   width: 100%;
   .header__container {
     display: grid;
@@ -13,7 +13,7 @@ header {
     }
     .header__title > a {
       font-family: $primary-font;
-      color: $primary-white;
+      color: black;
       text-decoration: none;
     }
     .header__nav-toggle {
@@ -23,7 +23,7 @@ header {
       display: block;
       width: 20px;
       height: 2px;
-      color: #fff;
+      color: black;
       background-color: #fff;
       margin-bottom: 5px;
     }
@@ -48,13 +48,13 @@ header {
     z-index: 100;
     width: 100%;
     height: 91%;
-    background-color: rgb(189, 169, 155);
+    background-color: #F1EBE7;
     place-items: center;
     opacity: 0;
     .header__nav-mobile-links,
     .header__social-media-icons {
       opacity: 0;
-      color: #f4f4f4;
+      color: black;
     }
 
     .header__nav-mobile-links.toggle,
