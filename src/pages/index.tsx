@@ -1,61 +1,110 @@
-import "./collections.scss"
-import React, { useState, useRef } from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
-
+import React, { Component } from 'react';
 import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
+import ReactCardFlip from 'react-card-flip';
+import "./collections.scss";
+import { StaticImage } from "gatsby-plugin-image"
+import { storeImageloaded } from 'gatsby-plugin-image/dist/src/components/hooks';
 
-const HowItWorks = () => {
-  const [show, setShow] = useState(false)
-  const target = useRef(null)
-
-  const handleCopyPasteClick = () => {
-    console.log("click")
-    navigator.clipboard.writeText("0x467cb7820E83FD84411132a696f471003C68008f")
-    setShow(!show)
-    setTimeout(() => {
-      setShow(false)
-    }, 1500)
-    
+class Example extends Component<any, any> {
+  constructor(props) {
+    super(props);
+    this.state = {
+        flipped: new Set()
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  return (
-    <Layout>
-    <>
-        <div className="row">
-            <div className="column">
-                    
-                    <StaticImage
+  handleClick(id) {
+    return (e) => {
+      e.preventDefault();
+      let flipped = new Set(this.state.flipped);
+      if (flipped.has(id)) {
+        flipped.delete(id);
+      } else {
+        flipped.add(id);
+      }
+      this.setState({ flipped });
+    };
+  }
+
+  render() {
+    return (
+        <Layout>
+            <div className="row">
+      <ReactCardFlip isFlipped={this.state.flipped.has(1)}>
+        
+        <div className="column" onClick={this.handleClick(1)}>
+        <StaticImage
                         src="../images/RoyalTees.jpg"
                         alt="the rarity of NFTees"
-                      
+                        style={{width:"100%",height:"auto"}}
+          />
+        </div>
+
+        <div className="column" onClick={this.handleClick(1)}>
+        <StaticImage
+                        src="../images/cardback.png"
+                        alt="the rarity of NFTees"
+                        style={{width:"100%",height:"auto"}}
                     />
-                    </div>
-                    <div className="column">
+        </div>
+      </ReactCardFlip>
+      <ReactCardFlip isFlipped={this.state.flipped.has(2)}>
+      <div className="column" onClick={this.handleClick(2)}>
                     <StaticImage
                         src="../images/CommuniTees.jpg"
                         alt="the rarity of NFTees"
-                
+                        style={{width:"100%",height:"auto"}}
                     />
                     </div>
-                    <div className="column">
+
+<div className="column" onClick={this.handleClick(2)}>
+                        <StaticImage
+                        src="../images/cardback.png"
+                        alt="the rarity of NFTees"
+                        style={{width:"100%",height:"auto"}}
+                    />
+</div>
+</ReactCardFlip>
+<ReactCardFlip isFlipped={this.state.flipped.has(3)}>
+      <div className="column" onClick={this.handleClick(3)}>
                     <StaticImage
                         src="../images/DesignLabs.jpg"
                         alt="the rarity of NFTees"
-
+                        style={{width:"100%",height:"auto"}}
                     />
                     </div>
-                    <div className="column">
+
+<div className="column" onClick={this.handleClick(3)}>
+                        <StaticImage
+                        src="../images/cardback.png"
+                        alt="the rarity of NFTees"
+                        style={{width:"100%",height:"auto"}}
+                    />
+</div>
+</ReactCardFlip>
+<ReactCardFlip isFlipped={this.state.flipped.has(4)}>
+      <div className="column" onClick={this.handleClick(4)}>
                     <StaticImage
                         src="../images/LifeStyle.jpg"
                         alt="the rarity of NFTees"
+                        style={{width:"100%",height:"auto"}}
                     />
-            </div>
-        </div>
-        </>
+                    </div>
+
+<div className="column" onClick={this.handleClick(4)}>
+                    <StaticImage
+                        src="../images/cardback.png"
+                        alt="the rarity of NFTees"
+                        style={{width:"100%",height:"auto"}}
+                    />
+</div>
+</ReactCardFlip>
+      </div>
       </Layout>
   )
 }
 
-export default HowItWorks
+}
+
+export default Example;
