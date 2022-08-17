@@ -22,7 +22,7 @@ const DesktopHeader = () => {
             to="/"
             activeClassName="active"
           >
-            Home
+            Collections
           </Link>
           <Link
             className={`desktop-header__nav-links ${toggle && "toggle"}`}

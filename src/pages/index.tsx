@@ -43,7 +43,7 @@ class Example extends Component<any, any> {
 
         <div className="column" onClick={this.handleClick(1)}>
         <StaticImage
-                        src="../images/cardback.png"
+                        src="../images/cardback1.png"
                         alt="the rarity of NFTees"
                         style={{width:"100%",height:"auto"}}
                     />
@@ -60,7 +60,7 @@ class Example extends Component<any, any> {
 
 <div className="column" onClick={this.handleClick(2)}>
                         <StaticImage
-                        src="../images/cardback.png"
+                        src="../images/cardback2.png"
                         alt="the rarity of NFTees"
                         style={{width:"100%",height:"auto"}}
                     />
@@ -77,7 +77,7 @@ class Example extends Component<any, any> {
 
 <div className="column" onClick={this.handleClick(3)}>
                         <StaticImage
-                        src="../images/cardback.png"
+                        src="../images/cardback3.png"
                         alt="the rarity of NFTees"
                         style={{width:"100%",height:"auto"}}
                     />
@@ -94,7 +94,7 @@ class Example extends Component<any, any> {
 
 <div className="column" onClick={this.handleClick(4)}>
                     <StaticImage
-                        src="../images/cardback.png"
+                        src="../images/cardback4.png"
                         alt="the rarity of NFTees"
                         style={{width:"100%",height:"auto"}}
                     />

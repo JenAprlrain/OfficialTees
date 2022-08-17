@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
           className={`header__nav-mobile-links ${toggle && "toggle"}`}
           to="/"
         >
-          Home
+          Collections
         </Link>
         <Link
           className={`header__nav-mobile-links ${toggle && "toggle"}`}
