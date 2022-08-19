@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
       <StaticImage
                         src="../../images/Red_Tees_Logo_2022.png"
                         alt="the rarity of NFTees"
-                        style={{width:"15%",height:"auto",marginLeft:"5%"}}
+                        style={{width:"20%",height:"auto",marginLeft:"5%"}}
           />
         <div
           className={`header__nav-toggle ${toggle && "toggle"}`}
