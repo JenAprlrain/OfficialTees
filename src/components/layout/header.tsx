@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { FaTshirt, FaDiscord, FaShopify } from "react-icons/fa"
 import { AiFillTwitterCircle } from "react-icons/ai"
+import { StaticImage} from "gatsby-plugin-image"
 
 interface HeaderProps {
   siteTitle: string
@@ -14,13 +15,11 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   return (
     <header>
       <div className="header__container">
-        <h1 className="header__title">
-          <Link to="/markets">
-            Official NF
-            <FaTshirt style={{ position: "relative", top: "2px" }} />
-            ees
-          </Link>
-        </h1>
+      <StaticImage
+                        src="../../images/Red_Tees_Logo_2022.png"
+                        alt="the rarity of NFTees"
+                        style={{width:"15%",height:"auto",marginLeft:"5%"}}
+          />
         <div
           className={`header__nav-toggle ${toggle && "toggle"}`}
           onClick={() => setToggle(!toggle)}

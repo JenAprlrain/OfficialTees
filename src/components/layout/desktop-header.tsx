@@ -1,7 +1,7 @@
 import "./desktop-header.scss"
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { FaTshirt } from "react-icons/fa"
+import { StaticImage} from "gatsby-plugin-image"
 
 const DesktopHeader = () => {
   const [toggle, setToggle] = useState(false)
@@ -9,13 +9,11 @@ const DesktopHeader = () => {
   return (
     <header className="desktop-header">
       <div className="desktop-header__container">
-        <h1 className="desktop-header__title">
-          <Link to="/markets">
-            Official NF
-            <FaTshirt style={{ position: "relative", top: "2px" }} />
-            ees
-          </Link>
-        </h1>
+      <StaticImage
+                        src="../../images/Red_Tees_Logo_2022.png"
+                        alt="the rarity of NFTees"
+                        style={{width:"30%",height:"auto",marginLeft:"15%"}}
+          />
         <nav className={`desktop-header__nav`}>
           <Link
             className={`desktop-header__nav-links ${toggle && "toggle"}`}

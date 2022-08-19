@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Layout from "../components/layout/layout"
 import ReactCardFlip from 'react-card-flip';
 import "./collections.scss";
-import { StaticImage } from "gatsby-plugin-image"
-import { storeImageloaded } from 'gatsby-plugin-image/dist/src/components/hooks';
+import { StaticImage} from "gatsby-plugin-image"
+import { Link} from "gatsby"
 
 class Example extends Component<any, any> {
   constructor(props) {
