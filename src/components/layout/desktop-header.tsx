@@ -12,7 +12,7 @@ const DesktopHeader = () => {
       <StaticImage
                         src="../../images/Red_Tees_Logo_2022.png"
                         alt="the rarity of NFTees"
-                        style={{width:"30%",height:"auto",marginLeft:"15%"}}
+                        style={{width:"30%",height:"auto",marginLeft:"15%",boxShadow:"none"}}
           />
         <nav className={`desktop-header__nav`}>
           <Link
